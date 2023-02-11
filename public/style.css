@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+* {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Laila', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#text-container {
+    width: screen;
+    text-align: center;
+}
+
+textarea {
+    text-align: start;
+    margin: auto;
+    margin-top: 22px;
+    max-width: 400px;
+    max-height: 275px;
+    min-width: 400px;
+    min-height: 125px;
+}
+
+#button-container {
+    width: 400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    width: 45px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+}
