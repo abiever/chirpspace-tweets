@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+* {
+    text-align: center;
+    background-color: #192447;
+}
+
+#darkmode-button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px rgba(4, 16, 58, 0.84);
+    z-index: 1;
+}
+
+#help-button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px rgba(4, 16, 58, 0.84);
+    z-index: 1;
+}
+
+#darkmode-container {
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#help-container {
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.material-symbols-outlined {
+    color: #4ad0ee;
+    background-color: transparent;
+    width: 26px;
+    height: 26px;
+}
+
+h1 {
+    font-family: 'Laila', sans-serif;
+    font-size: 76px;
+    color: #4ad0ee;
+    letter-spacing: 0.2rem;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+#p-container {
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+p {
+    font-family: monospace;
+    font-size: 11px;
+    color: #4ad0ee;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+textarea {
+    font-family: 'Laila', sans-serif;
+    font-size: 14px;
+    background-color: #04103a;
+    color: white;
+    text-align: start;
+    margin: auto;
+    margin-top: 0px;
+    max-width: 400px;
+    max-height: 345px;
+    min-width: 400px;
+    min-height: 125px;
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    resize: none;
+    border-radius:3px;
+    border:0;
+    border-color: transparent;
+    outline: none;
+    box-shadow: none;
+}
+
+textarea::placeholder {
+    color: white;
+}  
+
+#button-container {
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    font-family: 'Laila', sans-serif;
+    background-color: #04103a;
+    cursor: pointer;
+    color: #4ad0ee;
+    width: 45px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius:3px;
+    border:0;
+    box-shadow: none;
+}
+
+footer {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    display: flex;
+    color: white;
+    letter-spacing: 0.2rem;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Set this to your desired width */
+    height: 50px;
+    box-shadow: 4px 4px 10px rgba(4, 16, 58, 0.84);
+}
+
+a {
+    color: #4ad0ee;
+}

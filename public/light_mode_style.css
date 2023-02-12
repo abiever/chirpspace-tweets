@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Laila:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;1,200;1,300&display=swap');
+
+* {
+    text-align: center;
+    background-color: white;
+}
+
+#darkmode-button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
+    z-index: 1;
+}
+
+#help-button {
+    border: none;
+    border-radius: 3px;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
+    z-index: 1;
+}
+
+#darkmode-container {
+    background-color: white;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+#help-container {
+    background-color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+}
+
+.material-symbols-outlined {
+    color: black;
+    background-color: white;
+    width: 26px;
+    height: 26px;
+}
+
+h1 {
+    font-family: 'Laila', sans-serif;
+    font-size: 76px;
+    color: black;
+    letter-spacing: 0.2rem;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+h3 {
+    font-family: 'Nunito', sans-serif;
+    font-style: italic;
+    color: gray;
+    font-weight: 100;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    margin-top: 0px;
+    margin-bottom: 45px;
+}
+
+#p-container {
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+p {
+    font-family: monospace;
+    font-size: 11px;
+    color: gray;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+textarea {
+    font-family: 'Laila', sans-serif;
+    font-size: 14px;
+    text-align: start;
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: 0px;
+    max-width: 400px;
+    max-height: 345px;
+    min-width: 400px;
+    min-height: 125px;
+    padding-top: 6px;
+    padding-left: 8px;
+    padding-right: 8px;
+    resize: none;
+    border-radius:3px;
+    border:0;
+    border-color: transparent;
+    outline: none;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+
+textarea::placeholder {
+    color: gray;
+}  
+
+#button-container {
+    width: 400px;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 85px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button {
+    font-family: 'Laila', sans-serif;
+    background-color: white;
+    cursor: pointer;
+    color: gray;
+    width: 45px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius:3px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+}
+
+footer {
+    font-family: 'Nunito', sans-serif;
+    font-size: 10px;
+    display: flex;
+    color: black;
+    letter-spacing: 0.2rem;
+    position: fixed;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; /* Set this to your desired width */
+    height: 50px;
+    box-shadow:4px 4px 10px rgba(0, 0, 0, 0.161);
+}
+
+a {
+    color: purple;
+}
