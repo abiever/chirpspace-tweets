@@ -26,6 +26,7 @@
 }
 
 #help-container {
+    background-color: #192447;
     position: fixed;
     left: 0;
     top: 0;
@@ -38,6 +39,23 @@
     height: 26px;
 }
 
+#modal {
+    position: fixed;
+    background-color: #192447;
+    top: 5%;
+    left: 7%;
+    width: 290px;
+    box-shadow: none;
+}
+
+#modal h2, p {
+    text-align: left;
+}
+
+#modal p {
+    font-family: 'Nunito', sans-serif;
+}
+
 h1 {
     font-family: 'Laila', sans-serif;
     font-size: 76px;
@@ -45,6 +63,15 @@ h1 {
     letter-spacing: 0.2rem;
     margin-top: 40px;
     margin-bottom: 0px;
+}
+
+h2 {
+    font-family: 'Laila', sans-serif;
+    font-size: 28px;
+    color: #4ad0ee;
+    padding-top: 0;
+    margin-bottom: 4px;
+    letter-spacing: 0.1rem;  
 }
 
 h3 {
@@ -70,10 +97,14 @@ h3 {
 
 p {
     font-family: monospace;
-    font-size: 11px;
+    font-size: 12px;
     color: #4ad0ee;
     margin-top: 0;
     margin-bottom: 0;
+}
+
+#modal p {
+    color: white;
 }
 
 textarea {

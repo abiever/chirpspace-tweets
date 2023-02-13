@@ -66,12 +66,12 @@ export default function TweetBoxes() {
         </div>
       ))}
       <div id="button-container">
-        <button onClick={addTextArea} id="add-box" className="button">
-          +
-        </button>
-        <button onClick={removeTextArea} id="del-box" className="button">
-          -
-        </button>
+        <div>
+          <button onClick={addTextArea} id="add-button" className="button">+</button>
+        </div>
+        <div>
+          <button onClick={removeTextArea} id="del-button" className="button">-</button>
+        </div>
       </div>
     </div>
   );
