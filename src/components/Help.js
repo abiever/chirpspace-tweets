@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
+import { saveAs } from 'file-saver';
 
-export default function Help() {
+export default function HelpModal(props) {
   const [showModal, setShowModal] = useState(false);
+
+  const handleDownload = () => {
+    const content = props.savedContent.join('\n\n');
+    const blob = new Blob([content], { type: 'text/plain;charset=utf-8' });
+    saveAs(blob, 'chirps.txt');
+  };
 
   return (
     <div id="help-container">
@@ -20,11 +27,15 @@ export default function Help() {
             <p>if you have any feedback, need a bug to be pecked, or simply have a suggestion for a new feature, please don't hesitate to send a raven to:</p>
             <br></br>
             <p><a href='mailto:aaronlbtandem@gmail.com'>aaronlbtandem@gmail.com</a></p>
-            <h2 className='convenient-keystrokes'>quick keystrokes</h2>
+            <h2 className='convenient-keystrokes'>keystrokes</h2>
             <p><b>add textbox</b> — shift + enter</p>
             <p><b>delete textbox</b> — shift + tab</p>
-            
-            {/* <button onClick={() => setShowModal(false)}>Close</button> */}
+            <p><b>save & reset</b> — left click button</p>
+            <h2>saved tweets</h2>
+            <p>when you save your tweets and the writing area resets, your tweets will be saved here.</p>
+            <br></br>
+            <p><em>{props.savedContent.length ? `You have saved ${props.savedContent.length} tweets.` : 'You have not saved any tweets yet.'}</em></p>
+            <button onClick={handleDownload}>Download</button>
         </div>
       )}
     </div>

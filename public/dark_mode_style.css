@@ -10,6 +10,7 @@
     border-radius: 3px;
     box-shadow: 4px 4px 10px rgba(4, 16, 58, 0.84);
     z-index: 1;
+    cursor: pointer;
 }
 
 #help-button {
@@ -17,6 +18,7 @@
     border-radius: 3px;
     box-shadow: 4px 4px 10px rgba(4, 16, 58, 0.84);
     z-index: 1;
+    cursor: pointer;
 }
 
 #darkmode-container {
@@ -142,6 +144,16 @@ textarea::placeholder {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#save-button {
+    width: 80px;
+}
+
+#save-button-slash {
+    vertical-align: 5px;
+    padding-left: 5px;
+    background-color: #04103a;
 }
 
 .button {

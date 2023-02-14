@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef } from 'react';
+import HelpModal from './Help';
 
-export default function TweetBoxes() {
+export default function TweetBoxes(props) {
   const [textArea, setTextArea] = useState(["textarea"]);
   const [textAreaValues, setTextAreaValues] = useState([""]);
+  const [savedContent, setSavedContent] = useState([]); //new code
   const latestTextArea = useRef(null);
 
   function addTextArea() {
@@ -47,6 +49,12 @@ export default function TweetBoxes() {
     document.addEventListener("keydown", handleKeyDown);
   });
 
+  const handleSave = () => {
+    setSavedContent([...savedContent, ...textAreaValues]);
+    setTextAreaValues([""]);
+    setTextArea(["textarea"]);
+  };
+
   return (
     <div>
       {textArea.map((item, i) => (
@@ -66,13 +74,26 @@ export default function TweetBoxes() {
         </div>
       ))}
       <div id="button-container">
-        <div>
+        
           <button onClick={addTextArea} id="add-button" className="button">+</button>
-        </div>
-        <div>
+          <button 
+            onClick={handleSave} 
+            id="save-button" 
+            className="button">
+            <span class="material-symbols-outlined">
+              save
+            </span>
+            <span id='save-button-slash'>
+              /
+            </span> 
+            <span class="material-symbols-outlined">
+              restart_alt
+            </span>
+          </button>
           <button onClick={removeTextArea} id="del-button" className="button">-</button>
-        </div>
+        
       </div>
+      <HelpModal savedContent={savedContent} />
     </div>
   );
 }

@@ -7,7 +7,7 @@ import Header from './components/Header';
 import TweetBoxes from './components/TweetBoxes';
 import Footer from './components/Footer';
 import DarkMode from './components/DarkMode';
-import Help from './components/Help';
+import HelpModal from './components/Help';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -15,7 +15,7 @@ const root = createRoot(container);
 root.render(
   <React.StrictMode>
     <Header />
-    <Help />
+    <HelpModal />
     <DarkMode />
     <TweetBoxes />
     <Footer />
