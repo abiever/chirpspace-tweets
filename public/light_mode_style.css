@@ -45,9 +45,9 @@
 #modal {
     position: fixed;
     background-color: white;
-    top: 5%;
-    left: 7%;
-    width: 290px;
+    top: 4%;
+    left: 5%;
+    width: 310px;
     box-shadow: none;
 }
 
@@ -57,6 +57,19 @@
 
 #modal p {
     font-family: 'Nunito', sans-serif;
+}
+
+.download-button {
+    cursor: pointer;
+    color: gray;
+    width: 35px;
+    height: 28px;
+    font-size: 16px;
+    font-weight: 500;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    vertical-align: -4px;
 }
 
 h1 {
@@ -74,6 +87,7 @@ h2 {
     color: black;
     padding-top: 0;
     margin-bottom: 4px;
+    margin-top: 6px;
     letter-spacing: 0.1rem;  
 }
 
@@ -126,8 +140,8 @@ textarea {
     padding-left: 8px;
     padding-right: 8px;
     resize: none;
-    border-radius:3px;
-    border:0;
+    border-radius: 3px;
+    border: 0;
     border-color: transparent;
     outline: none;
     box-shadow:4px 4px 10px rgba(0,0,0,0.06);
@@ -135,6 +149,7 @@ textarea {
 
 textarea::placeholder {
     color: gray;
+    font-style: italic;
 }  
 
 #button-container {
@@ -166,9 +181,9 @@ textarea::placeholder {
     height: 28px;
     font-size: 16px;
     font-weight: 500;
-    border-radius:3px;
-    border:0;
-    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    border-radius: 3px;
+    border: 0;
+    box-shadow: 4px 4px 10px rgba(0,0,0,0.06);
 }
 
 footer {
@@ -187,7 +202,7 @@ footer {
     margin-left: auto;
     margin-right: auto;
     width: 100%; /* Set this to your desired width */
-    height: 50px;
+    height: 35px;
     box-shadow:4px 4px 10px rgba(0, 0, 0, 0.161);
 }
 
