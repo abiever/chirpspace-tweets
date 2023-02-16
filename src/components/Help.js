@@ -54,6 +54,8 @@ export default function HelpModal(props) {
               }
               </em>
             </p>
+            <br></br>
+            <p>Like this site? Donate breadcrumbs to the creator <a href="https://paypal.me/ATandem?country.x=US&locale.x=en_US" target='_blank' rel="noreferrer">HERE</a>.</p>
         </div>
       )}
     </div>
