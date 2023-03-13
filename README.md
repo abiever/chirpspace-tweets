@@ -1,31 +1,25 @@
-# Create React App
+#Chirpspace-Tweets
+A clean and concise webapp specifically made to help Twitter content creators get into a flow-state while writing tweets and threads. Built using React and deployed with Vercel.
 
-This directory is a brief example of a [Create React App](https://github.com/facebook/create-react-app) site that can be deployed to Vercel with zero configuration.
+#About
+Chirpspace was inspired during my first foray into creating content for Twitter, when I noticed how easy it is to get distracted away from writing your own content by unintentionally reading other content on the platform. 
 
-## Deploy Your Own
+I realized that there were other tools available online that could be used for similar purposes as Chirpspace, but I wanted to create something that was streamlined for one exact purpose and that didn't suffer from unnecesssary feature bloat. 
 
-Deploy your own Create React App project with Vercel.
+Additionally, I wanted to challenge myself to build something entirely on my own from conceptualization to initial shipment, all using React. 
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/create-react-app&template=create-react-app)
+#Challenges Overcome & Lessons Learned
+-Getting used to React, its features, and how to properly use and render compenents
+-Implementing Dark Mode & Light Mode UI settings 
+-Developing a method that allows users to "save" their written content and then download it as needed in plaintext format
+-Creating quick keystrokes so users can easily add/remove textboxes without needing to shift their hands away from the keyboard
 
-_Live Example: https://create-react-template.vercel.app/_
+#Current Known Issues
+-The downloaded plaintext files do not distinguish threads from tweets, and can seem ambigious when compiled together
+-The middle "save/rest" button only works via mouseclick
+-The site is designed for mobile usage
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes. You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode. See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.
-
-It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.
+#Future Potential Enhancements
+-Increasing "no distractions" via gamification where the user is "locked" into full-screen mode and cannot exit until they've either completed a writing related challenge or type out a specific phrase
+-Further gamification where the user attempts to beat their previous "high score" for how many tweets they can write within a given time frame 
+-Adding mobile site
